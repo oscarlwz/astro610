@@ -11,6 +11,14 @@ def plank(x,t):
     k=1.38E-23
     f0=2*h*c**2/(x**5)/(np.exp(h*c/x/k/t)-1)
     return f0
+def plankcgs(x,t):
+    h=6.626E-27
+    c=3E10
+    k=1.38E-16
+    f0=2*h*c**2/(x**5)/(np.exp(h*c/x/k/t)-1)
+    return f0
+
+
 #the generalized function I use to shift and subtract and the DB from DM. 
 def yi(a,b):
     a=np.array(a)
